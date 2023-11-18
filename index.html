@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Web Responsive</title>
+    <style>
+        .gambar {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /* Extra small device (phones, 600px and down) */ 
+        @media only screen and (max-width: 576px) {
+            table {
+                width: 100%;
+                background-color: aqua;
+            }
+            .gambar {
+                width: 100%;
+            }
+         }
+
+         /* Small devices (portrait tablets and large phones, 600px and up) */
+         @media only screen and (min-width: 576px) {
+            table {
+                width: 90%;
+                background-color: aquamarine;
+            }
+            .gambar {
+                width: 100%x;
+            }
+        }
+
+         /* Medium devices (landscape tablets, 768px and up) */ 
+        @media only screen and (min-width: 768px) { 
+            table { 
+                width: 80%;
+                background-color: yellow; 
+            }
+            .gambar { 
+               width: 100%; 
+         }
+        }  
+
+         /* Medium devices (landscape tablets, 992px and up) */ 
+         @media only screen and (min-width: 992px) { 
+            table { 
+                width: 70%; 
+                background-color: green; 
+            }
+            .gambar { 
+               width: 100%; 
+         }
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */ 
+        @media only screen and (min-width: 1200px) { 
+            table { 
+                width: 60%; 
+                background-color: blue; 
+            }
+            .gambar { 
+                width: 100%;
+            }
+        }
+
+        /* Extra large device (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1400px) {
+            table {
+                width: 50%;
+                background-color: red;
+            }
+            .gambar {
+                width: 1450px;
+            }
+        }  
+    </style>
+</head>
+<body>
+    <table border="1" align="center">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Kelas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>20</td>
+                <td>Dzulqarnain</td>
+                <td>X.U-7</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Ahmad</td>
+                <td>X.U-7</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>Jorel</td>
+                <td>X.U-7</td>
+            </tr>
+        </tbody>
+    </table>
+    <img src="images/kopasus.jpeg" alt="kopasus" class="gambar">
+</body>
+</html>
